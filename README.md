@@ -16,17 +16,12 @@ Explore the latest job opportunities tailored to your skills and preferences. Br
 - **User-Friendly Interface:** Navigate easily through our intuitive platform designed for both employers and job seekers.
 
 ## Getting Started
-To get started with Jobs at Mails, simply [sign up](#) for an account as either an employer or a job seeker. Once registered, you'll gain access to all our features to help you find the perfect job opportunity or candidate for your team.
+To get started with Jobs at Mails, simply [sign up] for an account as either an employer or a job seeker. Once registered, you'll gain access to all our features to help you find the perfect job opportunity or candidate for your team.
 
 ## Contributing
 We welcome contributions from the community to help improve Jobs at Mails. If you have ideas for new features, bug fixes, or any other improvements, please feel free to submit a pull request.
 
 ## Feedback
-We value your feedback! If you have any questions, suggestions, or issues, please don't hesitate to [contact us](mailto:contact@jobsatmails.com). Your input helps us continually improve Jobs at Mails for all users.
+We value your feedback! If you have any questions, suggestions, or issues, please don't hesitate to [contact us](ninjalucario360@gmail.com). Your input helps us continually improve Jobs at Mails for all users.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
 
----
-
-Join Jobs at Mails today and take the next step in your career or recruitment journey!
