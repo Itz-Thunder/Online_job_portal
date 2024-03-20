@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get started</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</head>
+<body>
+    <div class="container-fluid">
+    <!-- Wrapper sratrs here -->
+        <!-- navbaar -->
+        <div class="row sticky-top">
+            <div class="col-sm-12 p-0 my-color-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <nav class="navbar navbar-expand-lg ">
+                                <div class="container-fluid"><a class="navbar-brand" href="{% url 'index' %}">
+
+                                    <span class="navbar-brand mb-0 fw-bold ps-2">Jobs At Mail</span></a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                            <li class="nav-item">
+                                                <a class="nav-link active fw-bold ps-3" href="{% url 'emphome' %}"><i class="fa-solid fa-house pe-2"></i>Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                            <a class="nav-link active fw-bold" href="{% url 'postjob' %}">Post Job</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" href="{% url 'manageapp' %}">Manage Applicants</a>
+                        </li>
+                        <li class="nav-item dropdown active fw-bold">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Admin
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{% url 'empchangepassword' %}">Change Password</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{% url 'emplogout' %}">Log out</a></li>
+                            </ul>
+                        </li>
+
+                                        </ul>
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn btn-outline-success fw-bold"
+                                                type="submit">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- info row -->
+        <div class="row my-bg-2 text-light">
+            <div class="col-sm-3">
+                <img src="../static/images/logo_jobs_at_mail-removebg-preview.png" alt="" class="w-75 mt-4 ms-5">
+            </div>
+            <div class="col-sm-9 text-center  mt-4">
+                <span class="h1">Jobs At Mail</span>
+                <hr class="horizontal-line-2">
+                <p class="h4">An Online Plateform For Job search where you can get your dream Job in your dream company.</p>
+            </div>
+            <div class="my-line-1 mt-5"></div>
+        </div>
+        <!-- content -->
+        <div class="row">
+            <div class="my-line-1 my-4"></div>
+            <div class="col-sm-2 my-margin"></div>
+            <div class="col-sm-9 ">
+                <div class="my-box mx-5 py-5">
+                {% block body %}
+
+                {% endblock body %}
+                </div>
+            </div>
+            <div class="col-sm-1 my-margin"></div>
+        </div>
+        <!-- footer -->
+        <div class="my-line-1 mt-3"></div>
+        <div class="row my-bg-1">
+            <div class="col-sm-12  footer">
+                <div class="container">
+                    <div class="row pt-5 text-center text-black">
+                        <div class="col-sm-4">
+                            <ul class="my-list">
+                                <li>
+                                    <h3>General</h3>
+                                </li>
+                                <li><a href="#" class="text-decoration-none text-black">About Us</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Contact Us</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Help Center</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="my-list">
+                                <li>
+                                    <h3>Browse</h3>
+                                </li>
+                                <li><a href="#" class="text-decoration-none text-black">Jobs</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Jobseeker Registration</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Employer Registration</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="my-list">
+                                <li>
+                                    <h3>Directories</h3>
+                                </li>
+                                <li><a href="#" class="text-decoration-none text-black">Companies</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Featured</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">News</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Marketing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- wrapper ends here -->
+    </div>
+</body>
+</html>

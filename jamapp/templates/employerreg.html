@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block body %}
+<h4 style="color:green;text-align:end;width:60%;margin:0px auto;" class="mb-5">
+    Employer Registration Form :
+</h4>
+{% if msg %}
+<p style="text-align:center" class="bg-success fw-bold h4 text-light">
+    {{msg}}
+</p>
+{% endif %}
+
+<div style="width:60%; margin: 0px auto;" class="mt-5">
+    <form action="{% url 'ereg' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Enter Firm/Company Name :</label>
+            <input type="text" name="firmname" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter Firm/Company Work :</label>
+            <textarea name="firmwork" required class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Enter Firm/Company Address :</label>
+            <textarea name="firmaddress" required class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Enter Contact Person's Name :</label>
+            <input type="text" name="cpname" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter Contact No. :</label>
+            <input type="number" name="cpcontactno" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter Email Address :</label>
+            <input type="email" name="cpemailaddress" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter Aadhar Card No. :</label>
+            <input type="number" name="aadharno" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter Pan Card No. :</label>
+            <input type="text" name="panno" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter GST No. :</label>
+            <input type="text" name="gstno" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Create Password : </label>
+            <input type="password" name="password" class="form-control" required >
+        </div>
+        <div class="form-group pt-3">
+            <input type="submit" value="Register" class="btn btn-success">
+        </div>
+    </form>
+</div>
+
+{% endblock body %}

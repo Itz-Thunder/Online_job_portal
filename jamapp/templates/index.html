@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get started</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Wrapper sratrs here -->
+        <!-- navbaar -->
+        <div class="row sticky-top">
+            <div class="col-sm-12 p-0 my-color-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <nav class="navbar navbar-expand-lg sticky-top">
+                                <div class="container-fluid"><a class="navbar-brand" href="{% url 'index' %}">
+                                    <img src="../static/images/logo_jobs_at_mail-removebg-preview.png" class="w-25">
+                                    <span class="navbar-brand mb-0 fw-bold ps-2">Jobs At Mail</span></a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                            <li class="nav-item">
+                                                <a class="nav-link active fw-bold ps-3" href="{% url 'about' %}">About Us</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle active fw-bold ps-3" href="#"
+                                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Join Us
+                                                </a>
+                                                <ul class="dropdown-menu my-color-2">
+                                                    <li><a class="dropdown-item" href="{% url 'jobseekerreg' %}">Looking for a job </a></li>
+                                                    <li><a class="dropdown-item" href="{% url 'employerreg' %}">Looking for a employee</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="{% url 'login' %}">Already a member Login </a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active fw-bold ps-3" href="{% url 'contact' %}">Contact us </a>
+                                            </li>
+                                        </ul>
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn btn-outline-success fw-bold"
+                                                type="submit">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- welconme banner -->
+        <div class="row">
+            <section class="banner">
+                <h1 class="text-success fw-bold my-padd-1 text-center text-capitalize">
+                    Get your Dream JOb in Just 12 hours...!!!
+
+                </h1>
+                <hr class="horizontal-line-2">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#22b600" fill-opacity="0.7"
+                        d="M0,32L40,32C80,32,160,32,240,58.7C320,85,400,139,480,138.7C560,139,640,85,720,96C800,107,880,181,960,197.3C1040,213,1120,171,1200,144C1280,117,1360,107,1400,101.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+                    </path>
+                </svg>
+            </section>
+        </div>
+<!-- Massage -->
+        <div class="row">
+            <div class="col-sm-12 mt-5 text-center">
+                <h1>
+                    Get Your Dream Job in Your Dream Companies
+                </h1>
+                <h4 class="mt-4">
+                    The Companies intrusted in us are :
+                </h4>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end mx-5 pe-5">
+                    <button class="btn btn-success me-md-2" type="button">More</button>
+
+                </div>
+            </div>
+        </div>
+<!-- about contributed companies -->
+        <div class="row">
+            <div class="col-sm-12 mt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <marquee direction="left" scrollamount="5">
+                                <img src="static/images/google-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                                <img src="static/images/amazon-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                                <img src="static/images/apple-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                                <img src="static/images/cisco-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                                <img src="static/images/toyota-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                                <img src="static/images/walt-disney-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                                <img src="static/images/intel-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                                <img src="static/images/mcdonalds-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                                <img src="static/images/microsoft-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                                <img src="static/images/nike-logo.png" alt="" height="200px" width="200px" class="ms-3">
+                                <img src="static/images/oracle-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                                <img src="static/images/samsung-logo.png" alt="" height="200px" width="200px"
+                                    class="ms-5">
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-line-1 my-5"></div>
+<!-- New job details -->
+        <div class="row ">
+            <div class="col-sm-12 mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7 text-center">
+                            <h1>
+                                New Jobs Added Every Hours
+                            </h1>
+                            <hr class="horizontal-line-1">
+                            <h4>
+                                We're constantly adding jobs for posts like developer, marketing manager, Hr, Legal
+                                advisor, Salesman, Analyst and many more.
+                            </h4>
+                        </div>
+                        <div class="col-sm-5 text-center">
+                            <img src="static/images/ok_01.png" alt="" class="w-50 mt-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Direct contact -->
+        <div class="row">
+            <div class="col-sm-12 mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5 text-center">
+                            <img src="static/images/interview_1.png" alt="" class="w-50 mt-4">
+                        </div>
+                        <div class="col-sm-7 text-center">
+                            <h1>
+                                The Direct contact between you and the Employer
+                            </h1>
+                            <hr class="horizontal-line-1">
+                            <h4>
+                                Just Submit your resume and within hours you can scedule your online interview with our
+                                Employers and get hired if you are selected.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Resume -->
+        <div class="row ">
+            <div class="col-sm-12 mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7 text-center">
+                            <h1>
+                                Start with your resume
+                            </h1>
+                            <hr class="horizontal-line-1">
+                            <h4>
+                                Just post your resume and apply for the job available. your resume help you to get in
+                                the selected ones for and also make sure that you have the required skills.
+                            </h4>
+                        </div>
+                        <div class="col-sm-5 text-center">
+                            <img src="static/images/resume_1.png" alt="" class="w-50 mt-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-line-1 my-5"></div>
+<!-- counting for the selections  -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3  mt-3">
+                            <div class="text-center count">
+                                <h1 class="pt-5">
+                                    <i class="fa-sharp fa-solid fa-users text-success "></i>
+                                </h1>
+                                <h2 class="text-success">
+                                    100 k+
+                                </h2>
+                                <h4 class="text-success">
+                                    Job seekers are Enrolled
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  mt-3">
+                            <div class="text-center count">
+                                <h1 class="pt-5">
+                                    <i class="fa-solid fa-user-tie text-success"></i>
+                                </h1>
+                                <h2 class="text-success">
+                                    300+
+                                </h2>
+                                <h4 class="text-success">
+                                    Employers are hiring
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  mt-3">
+                            <div class="text-center count">
+                                <h1 class="pt-5">
+                                    <i class="fa-solid fa-briefcase text-success"></i>
+                                </h1>
+                                <h2 class="text-success">
+                                    30,000+
+                                </h2>
+                                <h4 class="text-success">
+                                    Are hired Already
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-3  mt-3">
+                            <div class="text-center count">
+                                <h1 class="pt-5">
+                                    <i class="fa-solid fa-city text-success"></i>
+                                </h1>
+                                <h2 class="text-success">
+                                    100+
+                                </h2>
+                                <h4 class="text-success">
+                                    Companies are hiring
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-line-1 my-5"></div>
+<!-- register here -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 text-center">
+                            <img src="static/images/stairs_1.png" alt="" class="w-50" >
+                            <p class="text-success fw-bold h3 mt-4">
+                                Let's started by Login in
+                            </p>
+                        </div>
+                        <div class="col-sm-8 mt-5">
+                            <p style="text-align:center" class="bg-success">
+    {{msg}}
+</p>
+                            <div style="width:60%; margin: 0px auto;">
+                                <form action="{% url 'validate' %}" method="post">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <label>Enter User ID :</label>
+                                        <input type="text" name="userid" required class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Enter Password : </label>
+                                        <input type="password" name="password" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Select User Type :</label>
+                                        <select name="usertype" class="form-control" required>
+                                            <option value="">-- select --</option>
+                                            <option value="employer">Employer</option>
+                                            <option value="jobseeker">Job Seeker</option>
+                                            <option value="admin">Administrator</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group pt-3">
+                                        New user Please Register.. <a href="#" class="text-success">Click Here</a>
+                                    </div>
+                                    <div class="form-group pt-3">
+                                        <input type="submit" value="Login" class="btn btn-success">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- footer -->
+        <div class="my-line-1 mt-5"></div>
+        <div class="row my-bg-1">
+            <div class="col-sm-12  footer">
+                <div class="container">
+                    <div class="row pt-5 text-center text-black">
+                        <div class="col-sm-4">
+                            <ul class="my-list">
+                                <li>
+                                    <h3>General</h3>
+                                </li>
+                                <li><a href="#" class="text-decoration-none text-black">About Us</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Contact Us</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Help Center</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="my-list">
+                                <li>
+                                    <h3>Browse</h3>
+                                </li>
+                                <li><a href="#" class="text-decoration-none text-black">Jobs</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Jobseeker Registration</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Employer Registration</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="my-list">
+                                <li>
+                                    <h3>Directories</h3>
+                                </li>
+                                <li><a href="#" class="text-decoration-none text-black">Companies</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Featured</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">News</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Marketing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- wrapper ends here -->
+    </div>
+</body>
+
+</html>

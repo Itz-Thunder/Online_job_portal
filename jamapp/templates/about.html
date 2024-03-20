@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get started</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Wrapper sratrs here  -->
+        <!-- Nav bar -->
+        <div class="row sticky-top">
+            <div class="col-sm-12 p-0 my-color-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <nav class="navbar navbar-expand-lg sticky-top">
+                                <div class="container-fluid"><a class="navbar-brand" href="{% url 'index' %}">
+                                    <img src="../static/images/logo_jobs_at_mail-removebg-preview.png" class="w-25">
+                                    <span class="navbar-brand mb-0 fw-bold ps-2">Jobs At Mail</span></a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                            <li class="nav-item">
+                                                <a class="nav-link active fw-bold ps-3" href="{% url 'about' %}">About Us</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle active fw-bold ps-3" href="#"
+                                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Join Us
+                                                </a>
+                                                <ul class="dropdown-menu my-color-2">
+                                                    <li><a class="dropdown-item" href="{% url 'jobseekerreg' %}">Looking for a job </a></li>
+                                                    <li><a class="dropdown-item" href="{% url 'employerreg' %}">Looking for a employee</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="{% url 'login' %}">Already a member Login </a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active fw-bold ps-3" href="{% url 'contact' %}">Contact us </a>
+                                            </li>
+                                        </ul>
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn btn-outline-success fw-bold"
+                                                type="submit">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- info header -->
+        <div class="row my-color-1">
+            <div class="col-sm-12 my-header">
+                <h1 class="text-center pt-5 mt-5">Get your dream job in just 12 hours</h1>
+                <h5 class="text-center mt-4 text-black-50">Featured jobs available at your doorsteps..!!</h5>
+            </div>
+        </div>
+        <!-- About Us content -->
+        <div class="row">
+            <div class="col-sm-12 mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 text-center">
+                            <h3 class="text-success">About Jobs At Mail</h3>
+                            <p>Welcome to JObs at mail, the world's largest professional network with more than
+                                10 Lakh members in more than 40 countries and territories worldwide.</p>
+                            <h4 class="mt-5 text-success">Our Vision</h4>
+                            <p>Create economic opportunity for every member of the global workforce.</p>
+                            <h4 class="mt-5 text-success">Our Mission</h4>
+                            <p>The mission of LinkedIn is simple: connect the world’s professionals to make them more
+                                productive and successful.</p>
+                            <h4 class="mt-5 text-success">Who we are ?</h4>
+                            <p>Jobs at mail began in co-founder Harsh's living room in 2022 and was officially launched
+                                on september 5th, 2022.</p>
+                            <p>In future, Jobs At Mail leads a diversified business with revenues from membership
+                                subscriptions,
+                                advertising sales and recruitment solutions under the leadership of Harsh. In future
+                                many companies Like Microsoft,google..etc complete its acquisition of Jobs At Mail,
+                                bringing together the world’s leading professional cloud and the world’s leading
+                                professional network.</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="../static/images/dream_job.jpg" alt="" class="w-100 mt-5 pt-5">
+                            <br>
+                            <h4 class="mt-5 text-success text-center">' A gate way of your dream job... '</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- reviews -->
+        <div class="my-line-1 mt-5"></div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="container">
+                    <h2 class="text-center text-success mt-5">Some reviews From Our Customers :</h2>
+                    <hr class="horizontal-line-1">
+                    <div class="row">
+                        <div class="col-sm-4 mt-5">
+                            <div class="h-auto p-5 reviews">
+                                <img src="../static/images/profile_2.jpg" alt="" class="profile">
+                                <br>
+                                <h5 class="text-success">Jackie Baddeley :</h5>
+                                <hr class="horizontal-line-1">
+                                <p>I have used Jobs at Mail in for years and I love it! A great way to link up with a
+                                    range of people in the professional and business world. Also a an opportunity to
+                                    learn from some of the world's leading gurus! I enjoy reading the discussions
+                                    following their posts. Really useful for finding jobs and information about other
+                                    careers. Lots of training and educational opportunities are available, (free and
+                                    with charges). An excellent resource. </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mt-5 ">
+                            <div class="h-auto p-5 reviews">
+                                <img src="../static/images/profile_3.jpg" alt="" class="profile">
+                                <br>
+                                <h5 class="text-success">Bruce Wiley :</h5>
+                                <hr class="horizontal-line-1">
+                                <p>Hadn't been using the app for the past few years. I met a friend on Instagram and
+                                    went to Jobs At Mail to check out his profile. I hadn't used it for so long I had to
+                                    change my password and doing so I realized that I needed to update my profile. Since
+                                    back on the app I have made a few new connections and am enjoying it more.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mt-5 ">
+                            <div class=" h-auto p-5 reviews">
+                                <img src="../static/images/profile_1.jpg" alt="" class="profile">
+                                <br>
+                                <h5 class="text-success">Akshit Baunthiyal :</h5>
+                                <hr class="horizontal-line-1">
+
+                                <p>This is a great app to use for job searching and finding information about different
+                                    companies. However, the 'Archived' section in the 'My jobs' page dissappeared
+                                    suddenly, which I guess is due to the new update.The app's back to being what I
+                                    liked about it. Original - The latest update is counter-intuitive. I know you want
+                                    people to find their interests but I have been greeted by the same 10 posts
+                                    everytime I have opened the app for the last 10 hours or so. I have to scroll down
+                                    before actually getting to something new/worthwhile.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="h-auto p-5 mt-5 reviews">
+                                <img src="../static/images/profile_4.jpg" alt="" class="profile">
+                                <br>
+                                <h5 class="text-success">George Fernandes :</h5>
+                                <hr class="horizontal-line-1">
+                                <p>Hello' and thank you to new ideals worth saving into feature partnerships for the
+                                    future.. Yes-tall order we all have felt the deciding routes to Plan Not like
+                                    before" is sizing" to all meant duty-bound with the set aims to evolve and turn into
+                                    value image. Beneath the ups and down time has set a trend to open Market play to
+                                    develop further ways to encourage and get the job done' upheaval gives the same and
+                                    suring that our skills better support all to unknown is clever handed. grade-worthy
+                                    ,</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="h-auto p-5 mt-5 reviews">
+                                <img src="../static/images/profile_6.jpg" alt="" class="profile">
+                                <br>
+                                <h5 class="text-success">Samuel Friday :</h5>
+                                <hr class="horizontal-line-1">
+                                <p>I have business friends!!! Hazahhhh! Seriously though. Very well done app and
+                                    service. Using Joibs At Mail to grow My Motivational/Wellness/Spiritual practice.
+                                    Its coming in handy quite alot to showcase abilities. Also met a dude in US who
+                                    failed 7 times in college, then finally passed and earned a degree from the US Army
+                                    War college. Asked him if I can use him in teaching clients about never giving up.
+                                    He loved the idea. So I teach using him in my classes now lol. Hes on My Jobs at
+                                    Mail.I contacted customer care who responded quickly and efficiently, eventually
+                                    advising me to uninstall and reinstall the app. Still, the concern is there with the
+                                    incident left unexplained.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="h-auto p-5 mt-5 reviews">
+                                <img src="../static/images/profile_8.jpg" alt="" class="profile">
+                                <br>
+                                <h5 class="text-success">Moses Thabang Sikhosana :</h5>
+                                <hr class="horizontal-line-1">
+                                <p>I have grown my connections thanks to LinkedIn. This app is so wonderful and it helps
+                                    a lot to connect with people like minded. I appreciate all connections I have at
+                                    present moment. They have shared so much knowledge and experience. To the developer
+                                    keep on doing a great job. LinkedIn must remain professionalism and connection to
+                                    the world with amazing people.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="my-line-1 mt-5"></div>
+        <div class="row my-bg-1">
+            <div class="col-sm-12  footer">
+                <div class="container">
+                    <div class="row pt-5 text-center text-black">
+                        <div class="col-sm-4">
+                            <ul class="my-list">
+                                <li>
+                                    <h3>General</h3>
+                                </li>
+                                <li><a href="#" class="text-decoration-none text-black">About Us</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Contact Us</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Help Center</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="my-list">
+                                <li>
+                                    <h3>Browse</h3>
+                                </li>
+                                <li><a href="#" class="text-decoration-none text-black">Jobs</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Jobseeker Registration</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Employer Registration</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="my-list">
+                                <li>
+                                    <h3>Directories</h3>
+                                </li>
+                                <li><a href="#" class="text-decoration-none text-black">Companies</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Featured</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">News</a></li>
+                                <li><a href="#" class="text-decoration-none text-black">Marketing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wrapper ends here -->
+    </div>
+</body>
+
+</html>

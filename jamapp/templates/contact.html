@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block body %}
+<h4 style="color:green;text-align:end;width:60%;margin:0px auto;" class="mb-5">
+    Contact us for any Query :
+</h4>
+{% if msg %}
+<p style="text-align:center" class="bg-info fw-bold">
+    {{msg}}
+</p>
+{% endif %}
+
+<div style="width:60%; margin: 0px auto;">
+    <form action="{% url 'saveenq' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Enter Your Name : </label>
+            <input type="text" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Select Your Gender :</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+        <div class="form-group">
+            <label>Enter Your Address</label>
+            <textarea class="form-control" name="address" required rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Enter Your Contact No. :</label>
+            <input type="number" name="contactno" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter Your Email :</label>
+            <input type="email" name="emailaddress" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter Your Query :</label>
+            <textarea name="enquirytext" required rows="6" class="form-control"></textarea>
+        </div>
+        <div class="form-group pt-3">
+            <input type="submit" value="Submit" class="btn btn-success">
+        </div>
+    </form>
+</div>
+{% endblock body %}

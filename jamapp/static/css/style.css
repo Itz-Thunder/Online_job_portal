@@ -1,0 +1,120 @@
+    .s-icon {
+        list-style-type: none;
+        padding-top: 30px;
+    }
+
+    .s-icon li {
+        display: inline-block;
+        background-color: black;
+        color: red;
+        padding: 10px 15px;
+        border-radius: 50%;
+        margin: 0px 5px;
+    }
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .my-header {
+        height: 300px;
+    }
+
+    .my-color-1 {
+        background-color: #22b600;
+    }
+
+    .my-color-2 {
+        background-color: #d2f2d4;
+    }
+
+    .banner {
+        background: url(../images/start_1.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .banner .waves {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .my-bg-1 {
+        background-color: #d2f2d4;
+    }
+
+    .my-bg-2 {
+        background-color: #22b600;
+    }
+
+    .horizontal-line-1 {
+        border: 5px solid #22b600;
+        border-radius: 50%;
+    }
+
+    .horizontal-line-2 {
+        border: 5px solid #d2f2d4;
+        border-radius: 50%;
+        opacity: 0.7;
+    }
+
+    .my-padd-1 {
+        padding-top: 45vh;
+    }
+
+    .my-line-1 {
+        height: 5px;
+        background-color: #22b600;
+        width: 100%;
+    }
+
+    .stars {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .profile {
+        height: 100px;
+        width: 100px;
+    }
+
+    .count {
+        height: 250px;
+        background-color: #d2f2d4;
+        border-radius: 15px;
+    }
+
+    .footer {
+        height: 300px;
+    }
+
+    .my-list {
+        list-style-type: none;
+    }
+
+    .reviews {
+        border: 5px solid #22b600;
+        border-radius: 0px 30px 0px 30px;
+    }
+
+    .my-margin {
+        min-height: 700px;
+        height: auto;
+        background-color: #d2f2d4;
+    }
+
+    .my-box {
+        border: 5px solid #22b600;
+        border-top: none;
+        border-bottom: none;
+        min-height: 700px;
+        height: auto;
+    }
+    .my-dash{
+        border:5px solid green;
+    }
